@@ -1,6 +1,7 @@
 package com.team5.game.environment;
 
 import com.badlogic.gdx.math.Vector2;
+import com.team5.game.sprites.health.Health;
 import com.team5.game.tools.Constants;
 import com.team5.game.tools.GameState;
 
@@ -27,6 +28,9 @@ public class Brig {
                 new Vector2((basePosition.x + (xOffset * prisoners))
                         * Constants.TILE_SIZE, basePosition.y * Constants.TILE_SIZE);
         prisoners++;
+
+        Health.fasterHealing();
+
         return position;
     }
 
