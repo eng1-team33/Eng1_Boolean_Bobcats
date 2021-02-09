@@ -2,6 +2,7 @@ package com.team5.game.tools;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class GameState implements Serializable {
@@ -12,6 +13,8 @@ public class GameState implements Serializable {
     private int currentHealth;
     private float playerX;
     private float playerY;
+    private boolean[] systemsBroken = new boolean[19];
+    private int systemsBrokenNumber;
 
     private GameState() {}
 
@@ -21,6 +24,8 @@ public class GameState implements Serializable {
         instance.setCurrentHealth(Constants.MAX_HEALTH);
         instance.setPlayerX(50 * Constants.TILE_SIZE);
         instance.setPlayerY(95 * Constants.TILE_SIZE);
+        Arrays.fill(instance.getSystemsBroken(), false);
+        instance.setSystemsBrokenNumber(0);
     }
 
     public static void initialise(GameState loadedGameState) {
@@ -65,5 +70,21 @@ public class GameState implements Serializable {
 
     public void setPlayerY(float playerY) {
         this.playerY = playerY;
+    }
+
+    public boolean[] getSystemsBroken() {
+        return systemsBroken;
+    }
+
+    public void setSystemsBroken(boolean[] systemsBroken) {
+        this.systemsBroken = systemsBroken;
+    }
+
+    public void setSystemsBrokenNumber(int systemsBrokenNumber) {
+        this.systemsBrokenNumber = systemsBrokenNumber;
+    }
+
+    public int getSystemsBrokenNumber() {
+        return systemsBrokenNumber;
     }
 }

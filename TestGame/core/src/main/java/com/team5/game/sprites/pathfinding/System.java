@@ -62,4 +62,9 @@ public class System extends Room {
     public boolean getBroken() {
         return broken;
     }
+
+    //Only use in inital setup of systems
+    public void setBroken(boolean broken) {
+        this.broken = broken;
+    }
 }

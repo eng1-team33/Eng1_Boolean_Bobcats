@@ -120,6 +120,10 @@ public class GameController {
         return brig;
     }
 
+    public NodeGraph getNodeGraph() {
+        return graph;
+    }
+
     public Array<NPC> getNpcs() {
         return npcs;
     }

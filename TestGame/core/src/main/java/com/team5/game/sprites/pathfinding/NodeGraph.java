@@ -8,6 +8,7 @@ import com.badlogic.gdx.ai.pfa.indexed.IndexedGraph;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ObjectMap;
+import com.team5.game.tools.GameState;
 
 public class NodeGraph implements IndexedGraph<Node> {
 
@@ -36,6 +37,13 @@ public class NodeGraph implements IndexedGraph<Node> {
         links = new Array<>();
 
         buildNodeMap();
+        setSystemsBroken();
+    }
+
+    private void setSystemsBroken() {
+        for(int i = 0; i < 19; i++) {
+            systems.get(i).setBroken(GameState.getInstance().getSystemsBroken()[i]);
+        }
     }
 
     //Adding a new system to the graph.
@@ -355,4 +363,5 @@ public class NodeGraph implements IndexedGraph<Node> {
     Array<Link> getLinks() {
         return links;
     }
+
 }

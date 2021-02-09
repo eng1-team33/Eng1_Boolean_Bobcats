@@ -206,7 +206,7 @@ public class PlayScreen implements Screen {
 
     void checkPause() {
         if (Gdx.input.isKeyJustPressed(Input.Keys.ESCAPE)) {
-            GameStateUtils.createGameState(gameController.getPlayer());
+            GameStateUtils.createGameState(gameController.getPlayer(), gameController.getNodeGraph().getSystems());
             if (mapVisible) {
                 minimapOff();
             } else if (paused) {

@@ -1,6 +1,7 @@
 package com.team5.game.environment;
 
 import com.badlogic.gdx.Gdx;
+import com.team5.game.tools.GameState;
 
 public class SystemChecker {
 
@@ -14,6 +15,7 @@ public class SystemChecker {
     int maxSystems = 15;
 
     public SystemChecker() {
+        systemsBroken = GameState.getInstance().getSystemsBrokenNumber();
     }
 
     //Called when an infiltrator finishes breaking a systems
