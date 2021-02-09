@@ -41,7 +41,7 @@ public class NodeGraph implements IndexedGraph<Node> {
     }
 
     private void setSystemsBroken() {
-        for(int i = 0; i < 19; i++) {
+        for(int i = 0; i < systems.size; i++) {
             systems.get(i).setBroken(GameState.getInstance().getSystemsBroken()[i]);
         }
     }

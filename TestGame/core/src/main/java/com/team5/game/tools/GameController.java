@@ -60,11 +60,12 @@ public class GameController {
             NPC npc = npcFactory.create(graph, this, node, node.getX(), node.getY());
             npcs.add(npc);
         }
-        for (int i = 0; i < noInfiltrators; i++) {
+        for (int i = 0; i < GameState.getInstance().getInfiltratorNumber(); i++) {
             System node = graph.getRandomSystem();
             Infiltrator newInfiltrator = infiltratorFactory.create(graph, this, node, node.getX(), node.getY(), false);
             infiltrators.add(newInfiltrator);
         }
+        java.lang.System.out.println(infiltrators.size);
     }
 
     public void draw(SpriteBatch batch) {

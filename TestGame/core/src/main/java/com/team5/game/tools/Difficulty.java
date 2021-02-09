@@ -11,7 +11,6 @@ public class Difficulty {
 
     public static void setDifficulty(int difficulty){
 
-        GameState.getInstance().setDifficulty(difficulty);
 
         Difficulty.difficulty = difficulty;
         switch(difficulty){

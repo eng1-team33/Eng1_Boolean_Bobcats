@@ -18,6 +18,7 @@ import com.team5.game.MainGame;
 import com.team5.game.tools.Constants;
 import com.team5.game.tools.CustomCamera;
 import com.team5.game.tools.Difficulty;
+import com.team5.game.tools.GameState;
 
 public class DifficultyScreen implements Screen {
 
@@ -162,6 +163,7 @@ public class DifficultyScreen implements Screen {
             public void clicked(InputEvent event, float x, float y){
                 click.play(0.5f, 1.5f, 0);
                 Difficulty.setDifficulty(0);
+                GameState.initialise();
                 game.setScreen(new PlayScreen(game));
             }
         });
@@ -170,6 +172,7 @@ public class DifficultyScreen implements Screen {
             public void clicked(InputEvent event, float x, float y){
                 click.play(0.5f, 1.5f, 0);
                 Difficulty.setDifficulty(1);
+                GameState.initialise();
                 game.setScreen(new PlayScreen(game));
             }
         });
@@ -178,6 +181,7 @@ public class DifficultyScreen implements Screen {
             public void clicked(InputEvent event, float x, float y){
                 click.play(0.5f, 1.5f, 0);
                 Difficulty.setDifficulty(2);
+                GameState.initialise();
                 game.setScreen(new PlayScreen(game));
             }
         });

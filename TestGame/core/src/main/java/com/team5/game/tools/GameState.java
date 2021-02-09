@@ -15,6 +15,7 @@ public class GameState implements Serializable {
     private float playerY;
     private boolean[] systemsBroken = new boolean[19];
     private int systemsBrokenNumber;
+    private int infiltratorNumber;
 
     private GameState() {}
 
@@ -26,6 +27,7 @@ public class GameState implements Serializable {
         instance.setPlayerY(95 * Constants.TILE_SIZE);
         Arrays.fill(instance.getSystemsBroken(), false);
         instance.setSystemsBrokenNumber(0);
+        instance.setInfiltratorNumber(Difficulty.getNoInfiltrators());
     }
 
     public static void initialise(GameState loadedGameState) {
@@ -86,5 +88,13 @@ public class GameState implements Serializable {
 
     public int getSystemsBrokenNumber() {
         return systemsBrokenNumber;
+    }
+
+    public int getInfiltratorNumber() {
+        return infiltratorNumber;
+    }
+
+    public void setInfiltratorNumber(int infiltratorNumber) {
+        this.infiltratorNumber = infiltratorNumber;
     }
 }
