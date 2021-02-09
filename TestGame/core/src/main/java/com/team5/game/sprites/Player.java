@@ -15,6 +15,8 @@ import com.team5.game.sprites.health.Health;
 import com.team5.game.tools.Constants;
 import com.team5.game.tools.GameState;
 
+import java.util.Random;
+
 public class Player extends Sprite {
 
     /*
@@ -131,6 +133,21 @@ public class Player extends Sprite {
         if (health.getHealing()) {
             health.draw(batch, getX() - 2, getY() - 2);
         }
+    }
+
+    public void givePowerUp() {
+
+        PowerUp[] powerUps = PowerUp.values();
+        Random random = new Random();
+
+        PowerUp randomPowerUp = powerUps[random.nextInt(powerUps.length)];
+
+        switch (randomPowerUp) {
+            case INCREASE_HEALTH:
+                health.increaseHealth();
+                break;
+        }
+
     }
 
 }

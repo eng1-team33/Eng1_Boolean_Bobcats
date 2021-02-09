@@ -92,7 +92,7 @@ public class InfiltratorAIBehaviour extends NPCAIBehaviour {
                 explosion.play(0.2f);
                 goalSystem.destroy();
                 systemChecker.breakSystem();
-                java.lang.System.out.println(goalSystem.name);
+                player.givePowerUp();
             }
             waiting = false;
             systems.removeValue(goalSystem, false);

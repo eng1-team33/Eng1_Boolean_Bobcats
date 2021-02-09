@@ -74,7 +74,9 @@ public class Health {
     }
 
     public void increaseHealth() {
-        currentHealth++;
+        if (currentHealth < Constants.MAX_HEALTH) {
+            currentHealth++;
+        }
     }
 
     public void decreaseHealth() {
