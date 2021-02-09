@@ -133,10 +133,10 @@ public class DifficultyScreen implements Screen {
         stage = new Stage(camera.port);
         Gdx.input.setInputProcessor(stage);
 
-        easyButton = new ImageButton(new Image(new Texture("Sprites/Menu/PlayOff.png")).getDrawable());
-        normalButton = new ImageButton(new Image(new Texture("Sprites/Menu/LoadOff.png")).getDrawable());
-        hardButton = new ImageButton(new Image(new Texture("Sprites/Menu/ExitOff.png")).getDrawable());
-        backButton = new ImageButton(new Image(new Texture("Sprites/Menu/ExitOff.png")).getDrawable());
+        easyButton = new ImageButton(new Image(new Texture("Sprites/Menu/EasyOff.png")).getDrawable());
+        normalButton = new ImageButton(new Image(new Texture("Sprites/Menu/MediumOff.png")).getDrawable());
+        hardButton = new ImageButton(new Image(new Texture("Sprites/Menu/HardOff.png")).getDrawable());
+        backButton = new ImageButton(new Image(new Texture("Sprites/Menu/BackOff.png")).getDrawable());
 
         easyButton.setPosition(easyPos.x, easyPos.y);
         normalButton.setPosition(normalPos.x, normalPos.y);
@@ -148,10 +148,10 @@ public class DifficultyScreen implements Screen {
         hardButton.setSize(96, 32);
         backButton.setSize(96, 32);
 
-        easyButton.getStyle().imageOver = new Image(new Texture("Sprites/Menu/PlayOn.png")).getDrawable();
-        normalButton.getStyle().imageOver = new Image(new Texture("Sprites/Menu/LoadOn.png")).getDrawable();
-        hardButton.getStyle().imageOver = new Image(new Texture("Sprites/Menu/ExitOn.png")).getDrawable();
-        backButton.getStyle().imageOver = new Image(new Texture("Sprites/Menu/ExitOn.png")).getDrawable();
+        easyButton.getStyle().imageOver = new Image(new Texture("Sprites/Menu/EasyOn.png")).getDrawable();
+        normalButton.getStyle().imageOver = new Image(new Texture("Sprites/Menu/MediumOn.png")).getDrawable();
+        hardButton.getStyle().imageOver = new Image(new Texture("Sprites/Menu/HardOn.png")).getDrawable();
+        backButton.getStyle().imageOver = new Image(new Texture("Sprites/Menu/BackOn.png")).getDrawable();
 
         stage.addActor(easyButton);
         stage.addActor(normalButton);
