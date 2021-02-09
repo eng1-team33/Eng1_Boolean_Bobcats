@@ -29,7 +29,7 @@ public class Health {
     Animator anim;
     TextureRegion healEffect;
 
-    float timeToHeal = 3;
+    public static float timeToHeal = 3;
     float timer;
 
     boolean healing = false;
@@ -89,6 +89,14 @@ public class Health {
 
     public boolean getHealing() {
         return healing;
+    }
+
+    // Decreases the time to heal at the infirmary by 0.5s to a minimum of 1s ...
+    // ... each time an infiltrator is caught. See: Brig.java, 'imprison()'
+    public static void fasterHealing() {
+        if (timeToHeal >= 1.5) {
+            timeToHeal -= 0.5f;
+        }
     }
 
     //Draws the Healing Effect
