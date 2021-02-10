@@ -39,5 +39,5 @@ Deep Space Y is space station on the outskirts of the galaxy, inhabited by human
 4. [The Link for the jacoco test coverage report](https://github.com/eng1-team33/auber-code-2/deliverables/jacoco.html)
 5. [The Link for the Continuous Integration Report](placeholder)
 6. [The Link for the Game File](placeholder)
-7. [The Link for the Final Game Repository](placeholder)
+7. [The Link for the Final Game Repository](https://github.com/eng1-team33/auber-code-2)
 
