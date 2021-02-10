@@ -25,8 +25,8 @@ jobs:
     - name: Change directory
       run: cd TestGame
     - name: Build core with Gradle
-      run: gradlew :core:build
+      run: ./gradlew :core:build
     - name: Build desktop with Gradle
-      run: gradlew :desktop:build
+      run: ./gradlew :desktop:build
     - name: Build jar
-      run: gradle jar
+      run: ./gradlew jar
