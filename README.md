@@ -23,11 +23,11 @@ Deep Space Y is space station on the outskirts of the galaxy, inhabited by human
 
 ## Original Deliverables (Updated with Assessment 2 Edits where Applicable)
 1. [The Link for FinalGame Repo](https://github.com/muhidinmo/Eng1_Boolean_Bobcats/tree/FinalGame/TestGame)
-2. [The Link for the Architecture](https://github.com/muhidinmo/Eng1_Boolean_Bobcats/blob/FinalGame/deliverables/Arch1.pdf)
+2. [The Link for the Architecture (Updated)](https://github.com/eng1-team33/auber-code-2/blob/main/deliverables/Arch1Updated.pdf)
 3. [The Link for the Implementation](https://github.com/muhidinmo/Eng1_Boolean_Bobcats/blob/FinalGame/deliverables/Impl1.pdf)
 4. [Link for the Plan](https://github.com/muhidinmo/Eng1_Boolean_Bobcats/blob/FinalGame/deliverables/Plan1.pdf)
-5. [Link for the Requirement](https://github.com/muhidinmo/Eng1_Boolean_Bobcats/blob/FinalGame/deliverables/Req1.pdf)
-6. [The Link for the Risk Assessment](https://github.com/muhidinmo/Eng1_Boolean_Bobcats/blob/FinalGame/deliverables/Risk1.pdf)
+5. [Link for the Requirement (Updated)](https://github.com/eng1-team33/auber-code-2/blob/main/deliverables/Req1Updated.pdf)
+6. [The Link for the Risk Assessment (Updated)](https://github.com/eng1-team33/auber-code-2/blob/main/deliverables/Risk1Updated.pdf)
 7. [The Link for the Self Assessment](https://github.com/muhidinmo/Eng1_Boolean_Bobcats/blob/FinalGame/deliverables/SelfAss1.pdf)
 8. [The Link for the Game](https://github.com/muhidinmo/Eng1_Boolean_Bobcats/tree/FinalGame/deliverables/Game)
 
@@ -36,7 +36,7 @@ Deep Space Y is space station on the outskirts of the galaxy, inhabited by human
 1. [The Link for the Change Report](placeholder)
 2. [The Link for the Implementation](placeholder)
 3. [The Link for the Testing Report](placeholder)
-4. [The Link for the jacoco test coverage report](http://htmlpreview.github.com/?https://github.com/eng1-team33/auber-code-2/deliverables/jacoco.html)
+4. [The Link for the jacoco test coverage report](https://github.com/eng1-team33/auber-code-2/deliverables/jacoco.html)
 5. [The Link for the Continuous Integration Report](placeholder)
 6. [The Link for the Game File](placeholder)
 7. [The Link for the Final Game Repository](https://github.com/eng1-team33/auber-code-2)
