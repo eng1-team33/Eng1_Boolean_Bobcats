@@ -60,11 +60,11 @@ public class PauseMenu {
         pauseImage.setPosition(camera.cam.position.x + pauseOffset.x,
                 camera.cam.position.y + pauseOffset.y);
 
-        saveButton = new ImageButton(new Image(new Texture("Sprites/Menu/saveOff.png")).getDrawable());
+        saveButton = new ImageButton(new Image(new Texture("Sprites/Menu/SaveOff.png")).getDrawable());
         saveButton.setPosition(camera.cam.position.x + saveOffset.x,
                 camera.cam.position.y + saveOffset.y);
         saveButton.setSize(96, 32);
-        saveButton.getStyle().imageOver = new Image(new Texture("Sprites/Menu/saveOn.png")).getDrawable();
+        saveButton.getStyle().imageOver = new Image(new Texture("Sprites/Menu/SaveOn.png")).getDrawable();
 
         menuButton = new ImageButton(new Image(new Texture("Sprites/Menu/MenuOff.png")).getDrawable());
         menuButton.setPosition(camera.cam.position.x + menuOffset.x,
