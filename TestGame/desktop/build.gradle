@@ -23,7 +23,7 @@ task debug(dependsOn: classes, type: JavaExec) {
 
 task dist(type: Jar) {
     manifest {
-        attributes 'Main-Class': project.mainClassName
+        attributes 'Main-Class': 'com.team5.game.desktop.DesktopLauncher'
     }
     dependsOn configurations.runtimeClasspath
     from {
