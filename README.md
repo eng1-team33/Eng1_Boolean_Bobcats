@@ -33,11 +33,11 @@ Deep Space Y is space station on the outskirts of the galaxy, inhabited by human
 
 ## Assessment 2 Deliverables
 
-1. [The Link for the Change Report](placeholder)
-2. [The Link for the Implementation](placeholder)
-3. [The Link for the Testing Report](placeholder)
+1. [The Link for the Change Report](https://github.com/eng1-team33/auber-code-2/blob/main/deliverables/Change2.pdf)
+2. [The Link for the Implementation](https://github.com/eng1-team33/auber-code-2/blob/main/deliverables/Impl2.pdf)
+3. [The Link for the Testing Report](https://github.com/eng1-team33/auber-code-2/blob/main/deliverables/Test2.pdf)
 4. [The Link for the jacoco test coverage report](http://htmlpreview.github.io/?https://github.com/eng1-team33/auber-code-2/blob/main/deliverables/jacoco.html)
-5. [The Link for the Continuous Integration Report](placeholder)
-6. [The Link for the Game File](placeholder)
+5. [The Link for the Continuous Integration Report](https://github.com/eng1-team33/auber-code-2/blob/main/deliverables/CI2.pdf)
+6. [The Link for the JAR Game File](https://github.com/eng1-team33/auber-code-2/blob/main/deliverables/Auber.jar)
 7. [The Link for the Final Game Repository](https://github.com/eng1-team33/auber-code-2)
 
