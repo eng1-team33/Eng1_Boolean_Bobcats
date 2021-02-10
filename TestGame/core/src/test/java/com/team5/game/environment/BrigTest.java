@@ -1,5 +1,6 @@
 package com.team5.game.environment;
 
+import com.team5.game.tools.GameState;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,6 +12,7 @@ class BrigTest {
 
     @BeforeEach
     void setup() {
+        GameState.initialise();
         brig = new Brig();
     }
 

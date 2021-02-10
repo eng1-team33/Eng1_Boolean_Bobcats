@@ -2,6 +2,7 @@ package com.team5.game.sprites.pathfinding;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.team5.game.tools.Atlas;
+import com.team5.game.tools.GameState;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -20,6 +21,7 @@ class NodeGraphTest {
 
     @BeforeEach
     public void setup() {
+        GameState.initialise();
         Atlas.overrideTextureAtlasWith(mockTextureAtlas);
         nodeGraph = new NodeGraph();
     }

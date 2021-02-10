@@ -13,6 +13,7 @@ public class GameStateUtils {
         Array<Infiltrator> infiltrators = gameController.getInfiltrators();
 
         GameState gameState = GameState.getInstance();
+        gameState.setDifficulty(Difficulty.difficulty);
         gameState.setPlayerX(player.getX());
         gameState.setPlayerY(player.getY());
         gameState.setCurrentHealth(player.getHealth());

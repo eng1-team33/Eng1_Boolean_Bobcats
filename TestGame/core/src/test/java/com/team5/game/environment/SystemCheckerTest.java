@@ -2,6 +2,7 @@ package com.team5.game.environment;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Application;
+import com.team5.game.tools.GameState;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.mockito.Mock.*;
@@ -15,7 +16,7 @@ class SystemCheckerTest {
 
     @BeforeEach
     void setup() {
-
+        GameState.initialise();
         Gdx.app = mock(Application.class);
         systemChecker = new SystemChecker();
     }
