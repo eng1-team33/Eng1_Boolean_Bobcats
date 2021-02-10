@@ -22,9 +22,11 @@ jobs:
         java-version: 1.8
     - name: Grant execute permission for gradlew
       run: chmod +x TestGame/gradlew
+    - name: Change directory
+      run: cd TestGame
     - name: Build core with Gradle
-      run: ./TestGame/gradlew :core:build
+      run: gradlew :core:build
     - name: Build desktop with Gradle
-      run: ./TestGame/gradlew :desktop:build
+      run: gradlew :desktop:build
     - name: Build jar
-      run: ./TestGame/gradle jar
+      run: gradle jar
